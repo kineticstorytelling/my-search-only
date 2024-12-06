@@ -7,6 +7,7 @@ function isHomePage() {
 function createOverlay() {
     const overlayHTML = `
         <div class="search-container">
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
             <img src="${chrome.runtime.getURL('my-search-only.png')}" alt="My Search Only" class="logo">
             <p class="tagline">Find only the content you need without the distractions</p>
             <input type="text" class="search-box" id="searchInput" placeholder="Search YouTube...">
@@ -43,9 +44,10 @@ function createOverlay() {
         }
         .tagline {
             color: #ffffff;
-            font-size: 18px;
+            font-size: 24px;
             margin-bottom: 30px;
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
         }
         .search-box {
             width: 100%;
@@ -63,17 +65,21 @@ function createOverlay() {
         }
         .search-button {
             margin-top: 20px;
-            padding: 12px 30px;
+            padding: 12px 40px;
             font-size: 18px;
             background-color: #ff0000;
             color: white;
             border: none;
-            border-radius: 25px;
+            border-radius: 8px;
             cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
         }
         .search-button:hover {
             background-color: #cc0000;
+            transform: translateY(-2px);
         }
     `;
 
