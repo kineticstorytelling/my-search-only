@@ -9,7 +9,7 @@ function createOverlay() {
         <div class="search-container">
             <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
             <img src="${chrome.runtime.getURL('my-search-only.png')}" alt="My Search Only" class="logo">
-            <p class="tagline">Find only the content you need without the distractions</p>
+            <p class="tagline">Find the content you need without the distractions</p>
             <input type="text" class="search-box" id="searchInput" placeholder="Search YouTube...">
             <br>
             <button class="search-button" id="searchButton">Search</button>
