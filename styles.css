@@ -1,0 +1,41 @@
+/* Hide homepage content */
+ytd-rich-grid-renderer,
+ytd-browse[page-subtype="home"] {
+  display: none !important;
+}
+
+/* Hide sidebar recommendations */
+#related,
+#secondary {
+  display: none !important;
+}
+
+/* Only show search results */
+ytd-search {
+  display: block !important;
+}
+
+/* Show search results page content */
+ytd-two-column-search-results-renderer {
+  display: block !important;
+}
+
+/* Hide end screen suggestions */
+.ytp-endscreen-content {
+  display: none !important;
+}
+
+/* Hide homepage sections */
+ytd-rich-section-renderer {
+  display: none !important;
+}
+
+/* Hide video suggestions on pause */
+.ytp-pause-overlay {
+  display: none !important;
+}
+
+/* Keep header visible for search functionality */
+#masthead {
+  display: block !important;
+}
